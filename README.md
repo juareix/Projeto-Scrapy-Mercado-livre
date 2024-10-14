@@ -7,3 +7,6 @@ scrapy crawl mercadolivre -o ../../data/data.jsonl
 
 Projeto-Scrapy-Mercado-livre/src
 $ python transformacao/main.py
+
+debeaver simula um client pra visualizar o db
+
