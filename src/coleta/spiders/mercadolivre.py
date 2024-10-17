@@ -18,7 +18,7 @@ class MercadolivreSpider(scrapy.Spider):
 
             yield {
                 'brand': product.css('span.ui-search-item__brand-discoverability.ui-search-item__group__element::text').get(),
-                'name': product.css('h2.ui-search-item__title::text').get(),
+                'name': product.css('h2.ui-search-item__title.ui-search-item__group__element::text').get(),
                 'old_price_reais': prices[0] if len(prices) > 0 else None,
                 'old_price_centavos': cents[0] if len(cents) > 0 else None,
                 'new_price_reais': prices[1] if len(prices) > 1 else None,
