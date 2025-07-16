@@ -4,7 +4,7 @@ import sqlite3
 from datetime import datetime
 
 #definir rota pro arquivo jsonl
-df = pd.read_json('../data/data.jsonl', lines=True)
+df = pd.read_json('../data/data.json', lines=True)
 
 #SÓ PRA EXIBIR TODAS AS COLUNAS NO TERMINAL
 pd.options.display.max_columns = None
